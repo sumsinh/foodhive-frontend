@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
@@ -33,6 +34,7 @@ function App() {
 
       <Routes>
   <Route path="/login" element={<Login />} />
+  <Route path="/register" element={<Register />} />
 
   <Route
     path="/"
@@ -42,6 +44,8 @@ function App() {
       </PrivateRoute>
     }
   />
+
+  
 
   <Route
     path="/restaurant/:id"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { loginUser } from "../api/auth";
 import { saveToken } from "../utils/token";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
@@ -33,6 +33,9 @@ function Login() {
         <h1 className="text-3xl font-bold text-orange-500 text-center">
           FoodHive
         </h1>
+        <p className="text-center text-gray-500 mt-1" >
+  Don't have an account? <Link to="/register">Register</Link>
+</p>
         <p className="text-center text-gray-500 mt-1">
           Login to continue
         </p>
