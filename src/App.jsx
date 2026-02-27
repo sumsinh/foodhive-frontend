@@ -45,8 +45,6 @@ function App() {
     }
   />
 
-  
-
   <Route
     path="/restaurant/:id"
     element={

@@ -1,4 +1,6 @@
 const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
+console.log("API_BASE:", API_BASE);
+
 
 export async function loginUser(username, password) {
   const res = await fetch(`${API_BASE}/users/login/`, {
